@@ -1,0 +1,8 @@
+接口编号,接口名称,接口类型,接口描述,输入,输出,协议
+IF-001,CLI主接口,命令行,dev-test-tools命令入口,子命令+参数,执行结果,CLI
+IF-002,run子命令,命令行,执行测试,--project <路径>,测试结果,CLI
+IF-003,coverage子命令,命令行,聚合覆盖率,--projects <路径列表>,覆盖率报告,CLI
+IF-004,report子命令,命令行,生成报告,--format <格式>,测试报告,CLI
+IF-005,defect子命令,命令行,缺陷管理,add/list/update,缺陷数据,CLI
+IF-006,调度器接口,CLI,与dev-task-scheduler协同,定时任务触发,执行结果,CLI
+IF-007,环境变量接口,环境变量,PROJECT_ROOT注入,项目路径,跨项目调用,ENV

@@ -1,0 +1,17 @@
+需求编号,功能名称,功能描述,优先级,前置条件,验收标准
+REQ-FUNC-001,跨项目测试执行,通过CLI命令跨项目执行pytest测试,Must,项目路径存在,dev-test-tools run --project <路径> 执行成功
+REQ-FUNC-002,pytest统一编排,支持pytest统一编排多个项目的测试任务,Must,多项目路径存在,支持同时指定多个项目路径并行执行
+REQ-FUNC-003,覆盖率聚合,支持聚合多个项目的测试覆盖率数据,Must,项目已执行测试,dev-test-tools coverage --projects <路径列表> 聚合成功
+REQ-FUNC-004,覆盖率报告输出,输出覆盖率汇总报告（CSV/Markdown格式）,Must,覆盖率已聚合,输出CSV和Markdown格式覆盖率报告
+REQ-FUNC-005,缺陷登记,支持缺陷登记功能,Must,无,dev-test-tools defect add 登记成功
+REQ-FUNC-006,缺陷状态跟踪,支持缺陷状态跟踪（新建/处理中/已关闭）,Must,缺陷已登记,缺陷状态可流转
+REQ-FUNC-007,缺陷闭环管理,支持缺陷闭环管理,Must,缺陷处理中,缺陷可标记为已关闭并记录关闭原因
+REQ-FUNC-008,测试报告生成,支持生成测试报告,Must,测试已执行,dev-test-tools report 生成成功
+REQ-FUNC-009,CSV格式报告,支持CSV格式测试报告,Must,报告已生成,输出UTF-8 BOM编码的CSV测试报告
+REQ-FUNC-010,Markdown格式报告,支持Markdown格式测试报告,Should,报告已生成,输出Markdown格式测试报告
+REQ-FUNC-011,调度器协同,支持与dev-task-scheduler调度器协同,Should,调度器已配置,夜间测试任务可通过调度器触发执行
+REQ-FUNC-012,CLI接口,系统应支持CLI接口供调度器调用,Must,无,提供标准CLI接口
+REQ-FUNC-013,三平台兼容,系统应兼容macOS/Linux/Windows三平台,Must,Python 3.10+已安装,在三平台均可正常安装运行
+REQ-FUNC-014,敏感信息脱敏,系统应遵循敏感信息脱敏规范,Must,无,日志/报告中敏感信息按 iron_rules §3 脱敏
+REQ-FUNC-015,全生命周期治理,系统应遵循DevProjectTeamSkill全生命周期治理,Must,无,台账/评审/基线/交接按治理规范执行
+REQ-FUNC-016,PROJECT_ROOT注入,系统应支持PROJECT_ROOT环境变量注入,Should,环境变量已设置,跨项目调用通过PROJECT_ROOT环境变量指定项目路径

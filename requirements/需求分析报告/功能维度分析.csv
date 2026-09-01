@@ -1,0 +1,17 @@
+需求编号,功能分类,功能描述,优先级,复杂度,依赖关系,验收标准
+REQ-001,测试执行,跨项目pytest测试执行,高,中,无,dev-test-tools run --project <路径> 可执行指定项目测试
+REQ-002,测试执行,pytest统一编排多项目测试,高,高,REQ-001,支持多项目路径并行执行
+REQ-003,覆盖率,多项目覆盖率数据聚合,高,中,REQ-001,dev-test-tools coverage --projects <路径列表> 聚合覆盖率
+REQ-004,覆盖率,覆盖率汇总报告输出,高,中,REQ-003,输出CSV和Markdown格式覆盖率报告
+REQ-005,缺陷管理,缺陷登记功能,高,低,无,dev-test-tools defect add 登记新缺陷
+REQ-006,缺陷管理,缺陷状态跟踪,高,中,REQ-005,缺陷状态流转：新建→处理中→已关闭
+REQ-007,缺陷管理,缺陷闭环管理,高,中,REQ-006,缺陷可关闭并记录关闭原因
+REQ-008,测试报告,测试报告生成功能,高,中,REQ-001/REQ-003,dev-test-tools report 生成测试报告
+REQ-009,测试报告,CSV格式测试报告,高,低,REQ-008,输出UTF-8 BOM编码CSV报告
+REQ-010,测试报告,Markdown格式测试报告,中,中,REQ-008,输出Markdown格式报告
+REQ-011,调度协同,与dev-task-scheduler协同,中,中,REQ-001/REQ-012,夜间任务可通过调度器触发
+REQ-012,CLI接口,标准CLI接口,高,中,无,提供run/coverage/report/defect命令
+REQ-013,兼容性,三平台兼容,高,中,无,macOS/Linux/Windows均可运行
+REQ-014,安全,敏感信息脱敏,高,中,无,日志/报告敏感信息按规范脱敏
+REQ-015,治理,全生命周期治理,高,低,无,台账/评审/基线/交接按规范执行
+REQ-016,集成,PROJECT_ROOT环境变量注入,中,低,REQ-012,跨项目调用通过环境变量指定路径

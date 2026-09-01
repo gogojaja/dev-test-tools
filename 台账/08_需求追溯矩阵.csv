@@ -1,0 +1,17 @@
+需求编号,需求描述,来源,优先级,关联功能模块,关联接口,关联数据实体,关联测试用例,关联设计文档,变更记录
+REQ-FUNC-001,跨项目测试执行,README-特性1,Must,测试执行模块,IF-002,测试数据,待编写,待设计,无
+REQ-FUNC-002,pytest统一编排,README-特性1,Must,测试执行模块,IF-002,测试数据,待编写,待设计,无
+REQ-FUNC-003,覆盖率聚合,README-特性2,Must,覆盖率模块,IF-003,覆盖率数据,待编写,待设计,无
+REQ-FUNC-004,覆盖率报告输出,README-特性2,Must,覆盖率模块,IF-003,覆盖率报告,待编写,待设计,无
+REQ-FUNC-005,缺陷登记,README-特性3,Must,缺陷管理模块,IF-005,缺陷数据,待编写,待设计,无
+REQ-FUNC-006,缺陷状态跟踪,README-特性3,Must,缺陷管理模块,IF-005,缺陷状态,待编写,待设计,无
+REQ-FUNC-007,缺陷闭环管理,README-特性3,Must,缺陷管理模块,IF-005,缺陷数据,待编写,待设计,无
+REQ-FUNC-008,测试报告生成,README-特性4,Must,报告生成模块,IF-004,报告数据,待编写,待设计,无
+REQ-FUNC-009,CSV格式报告,README-特性4,Must,报告生成模块,IF-004,CSV报告,待编写,待设计,无
+REQ-FUNC-010,Markdown格式报告,README-特性4,Should,报告生成模块,IF-004,Markdown报告,待编写,待设计,无
+REQ-FUNC-011,调度器协同,README-特性5,Should,调度协同模块,IF-006,调度数据,待编写,待设计,无
+REQ-FUNC-012,CLI接口,README-特性5,Must,CLI接口模块,IF-001,命令数据,待编写,待设计,无
+REQ-FUNC-013,三平台兼容,README-技术栈,Must,兼容性模块,IF-007,环境数据,待编写,待设计,无
+REQ-FUNC-014,敏感信息脱敏,README-技术栈,Must,安全模块,IF-001,日志数据,待编写,待设计,无
+REQ-FUNC-015,全生命周期治理,README-治理,Must,治理模块,IF-001,台账数据,待编写,待设计,无
+REQ-FUNC-016,PROJECT_ROOT注入,README-治理,Should,集成模块,IF-007,环境变量,待编写,待设计,无

@@ -1,0 +1,17 @@
+需求编号,来源载体,原子行为描述,MoSCoW,分类,验收标准,约束依据,状态
+REQ-001,README-特性1,系统应支持通过CLI命令跨项目执行pytest测试,Must,功能,用户可通过 dev-test-tools run --project <项目路径> 执行指定项目测试,技术栈:Python 3.10+,待分析
+REQ-002,README-特性1,系统应支持pytest统一编排多个项目的测试任务,Must,功能,支持同时指定多个项目路径并行执行测试,技术栈:Python 3.10+,待分析
+REQ-003,README-特性2,系统应支持聚合多个项目的测试覆盖率数据,Must,功能,用户可通过 dev-test-tools coverage --projects <路径列表> 聚合覆盖率,技术栈:coverage,待分析
+REQ-004,README-特性2,系统应输出覆盖率汇总报告（CSV/Markdown格式）,Must,功能,输出覆盖率汇总CSV和Markdown报告,技术栈:CSV UTF-8 BOM,待分析
+REQ-005,README-特性3,系统应支持缺陷登记功能,Must,功能,用户可通过 dev-test-tools defect add 登记新缺陷,技术栈:CSV UTF-8 BOM,待分析
+REQ-006,README-特性3,系统应支持缺陷状态跟踪（新建/处理中/已关闭）,Must,功能,缺陷状态可流转：新建→处理中→已关闭,技术栈:CSV UTF-8 BOM,待分析
+REQ-007,README-特性3,系统应支持缺陷闭环管理,Must,功能,缺陷可标记为已关闭并记录关闭原因,技术栈:CSV UTF-8 BOM,待分析
+REQ-008,README-特性4,系统应支持生成测试报告,Must,功能,用户可通过 dev-test-tools report 生成测试报告,技术栈:CSV UTF-8 BOM,待分析
+REQ-009,README-特性4,系统应支持CSV格式测试报告,Must,功能,输出UTF-8 BOM编码的CSV测试报告,技术栈:CSV UTF-8 BOM,待分析
+REQ-010,README-特性4,系统应支持Markdown格式测试报告,Should,功能,输出Markdown格式测试报告,技术栈:Python 3.10+,待分析
+REQ-011,README-特性5,系统应支持与dev-task-scheduler调度器协同,Should,集成,夜间测试任务可通过调度器触发执行,技术栈:CLI接口,待分析
+REQ-012,README-特性5,系统应支持CLI接口供调度器调用,Must,功能,提供标准CLI接口：dev-test-tools run/coverage/report/defect,技术栈:Python 3.10+,待分析
+REQ-013,README-技术栈,系统应兼容macOS/Linux/Windows三平台,Must,非功能,在三平台均可正常安装运行,技术栈:Python 3.10+,待分析
+REQ-014,README-技术栈,系统应遵循敏感信息脱敏规范,Must,安全,日志/报告中敏感信息按 iron_rules §3 脱敏,合规:iron_rules §3,待分析
+REQ-015,README-治理,系统应遵循DevProjectTeamSkill全生命周期治理,Must,非功能,台账/评审/基线/交接按治理规范执行,治理:全生命周期,待分析
+REQ-016,README-治理,系统应支持PROJECT_ROOT环境变量注入,Should,集成,跨项目调用通过PROJECT_ROOT环境变量指定项目路径,技术栈:tool_calling_standard.md,待分析

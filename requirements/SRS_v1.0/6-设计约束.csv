@@ -1,0 +1,7 @@
+约束编号,约束类型,约束描述,影响范围
+CONST-001,技术栈,Python 3.10+,开发/运行环境
+CONST-002,数据格式,CSV UTF-8 BOM,所有数据存储
+CONST-003,测试框架,pytest,测试执行
+CONST-004,覆盖率工具,coverage,覆盖率统计
+CONST-005,合规规范,iron_rules §3,敏感信息脱敏
+CONST-006,治理规范,DevProjectTeamSkill全生命周期,台账/评审/基线/交接

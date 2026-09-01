@@ -1,0 +1,7 @@
+需求编号,接口类型,接口描述,协议/格式,调用方式
+REQ-012,CLI接口,dev-test-tools run,命令行参数,CLI调用
+REQ-012,CLI接口,dev-test-tools coverage,命令行参数,CLI调用
+REQ-012,CLI接口,dev-test-tools report,命令行参数,CLI调用
+REQ-012,CLI接口,dev-test-tools defect,命令行参数,CLI调用
+REQ-011,调度接口,与dev-task-scheduler协同,CLI接口,定时任务触发
+REQ-016,环境接口,PROJECT_ROOT环境变量,环境变量,进程环境

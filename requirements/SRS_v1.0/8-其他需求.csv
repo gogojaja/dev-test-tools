@@ -1,0 +1,6 @@
+需求编号,需求类型,需求描述,优先级
+REQ-OTHER-001,文档需求,README文档完整,高
+REQ-OTHER-002,文档需求,CHANGELOG变更记录,中
+REQ-OTHER-003,文档需求,API文档,中
+REQ-OTHER-004,安装需求,pip安装支持,高
+REQ-OTHER-005,发布需求,版本发布流程,中

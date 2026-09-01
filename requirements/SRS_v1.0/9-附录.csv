@@ -1,0 +1,5 @@
+附录编号,附录名称,附录内容
+APP-001,术语表,CLI/CSV/BOM/pytest/coverage等术语定义
+APP-002,参考文档,README.md/项目章程.md/项目铁律.md
+APP-003,相关标准,IEEE 830/BABOK v3/iron_rules
+APP-004,变更记录,v1.0 初始版本

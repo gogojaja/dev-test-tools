@@ -1,0 +1,12 @@
+章节,内容
+文档标题,dev-test-tools 软件需求规格说明书
+文档编号,SRS-PRJ-QA-001-v1.0
+版本,v1.0
+状态,待评审
+编写日期,2026-09-01
+编写人,需求分析师
+项目编号,PRJ-QA-001
+项目名称,dev-test-tools
+参考文档,README.md/项目章程.md/项目铁律.md
+术语定义,CLI=命令行接口/CSV=逗号分隔值/BOM=字节顺序标记
+缩略语,pytest=Python测试框架/coverage=覆盖率工具
